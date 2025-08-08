@@ -1,0 +1,14 @@
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\bin\Debug\net8.0\study1.exe
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\bin\Debug\net8.0\study1.deps.json
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\bin\Debug\net8.0\study1.runtimeconfig.json
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\bin\Debug\net8.0\study1.dll
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\bin\Debug\net8.0\study1.pdb
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\study1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\study1.AssemblyInfoInputs.cache
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\study1.AssemblyInfo.cs
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\study1.csproj.CoreCompileInputs.cache
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\study1.dll
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\refint\study1.dll
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\study1.pdb
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\study1.genruntimeconfig.cache
+C:\Users\qkral\OneDrive\Desktop\kingseo\study1\study1\obj\Debug\net8.0\ref\study1.dll

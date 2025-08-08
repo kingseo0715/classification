@@ -1,0 +1,69 @@
+﻿<Page x:Class="Medical.Views.Pages.DashboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:shadow="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+      xmlns:packIcon="http://materialdesigninxaml.net/winfx/xaml/controls"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Medical.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1200"
+      Title="DashboardPage"
+      Background="#881E1E1E">
+
+    <DockPanel>
+        
+        <!-- ✅ 상단 사용자 바 -->
+        <Border DockPanel.Dock="Top"
+                Background="#CC1E1E1E"
+                Height="60"
+                Padding="20"
+                CornerRadius="0,0,6,6"
+                SnapsToDevicePixels="True"
+                materialDesign:ElevationAssist.Elevation="Dp2">
+            <Grid Margin="20,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- 왼쪽 타이틀 -->
+                <TextBlock Text="🏥 간호사 대시보드"
+                           VerticalAlignment="Center"
+                           FontSize="20"
+                           FontWeight="SemiBold"
+                           Foreground="White"/>
+
+                <!-- 오른쪽 로그인 사용자 -->
+                <StackPanel Orientation="Horizontal"
+                            Grid.Column="1"
+                            VerticalAlignment="Center">
+                    
+                    <materialDesign:PackIcon Kind="AccountCircle"
+                                       Width="28"
+                                       Height="28"
+                                       Foreground="White"/>
+                    <TextBlock Text="{Binding Username}"
+                               VerticalAlignment="Center"
+                               Foreground="White"
+                               FontSize="16"
+                               FontWeight="Bold"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- 아래쪽 콘텐츠 영역 -->
+        <!-- 아래쪽 콘텐츠 영역 -->
+        <ScrollViewer>
+            <StackPanel Margin="20">
+                <Border Background="#CCFFFFFF" Padding="20" CornerRadius="10">
+                    <TextBlock Text="여기에 대시보드 콘텐츠를 추가하세요."
+                               FontSize="18"
+                               FontWeight="Normal"
+                               Foreground="Black"/>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Page>

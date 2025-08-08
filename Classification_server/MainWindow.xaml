@@ -1,0 +1,30 @@
+﻿<Window x:Class="Classification_server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Classification_server"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="receiveImage" Width="400" Height="400"/>
+
+        <ScrollViewer Grid.Column="1" Margin="10">
+            <TextBlock x:Name="extractedAddressTextBlock" 
+                       Grid.Column="1"
+                       FontSize="16"
+                       TextWrapping="Wrap"
+                       Foreground="Black"
+                       TextTrimming="CharacterEllipsis"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       Width="250"
+                       />    
+        </ScrollViewer>
+        
+    </Grid>
+</Window>

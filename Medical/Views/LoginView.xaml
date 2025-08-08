@@ -1,0 +1,55 @@
+﻿<Window x:Class="Medical.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medical.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="로그인" Height="400" Width="300"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource MaterialDesignPaper}">
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 로고나 제목 -->
+        <!-- 제목 -->
+        <TextBlock Grid.Row="0"
+                   Text="Hospital System"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="{DynamicResource PrimaryHueMidBrush}"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,30"/>
+
+        <!-- 아이디 -->
+        <TextBox Grid.Row="1"
+                 Margin="0,0,0,10"
+                 Text="{Binding Username}"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 materialDesign:HintAssist.Hint="아이디"/>
+
+        <!-- 비밀번호 -->
+        <PasswordBox Grid.Row="2"
+                     Margin="0,0,0,20"
+                     PasswordChanged="PasswordBox_PasswordChanged"
+                     Style="{StaticResource MaterialDesignOutlinedPasswordBox}"
+                     materialDesign:HintAssist.Hint="비밀번호"/>
+
+        <!-- 로그인 버튼 -->
+        <Button Grid.Row="3"
+                Content="로그인"
+                Width="150"
+                Height="40"
+                Command="{Binding LoginCommand}"
+                Style="{StaticResource MaterialDesignFlatButton}"
+                HorizontalAlignment="Center"
+                IsDefault="True"/>
+    </Grid>
+</Window>
